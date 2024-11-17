@@ -1,0 +1,879 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+bind-address: "*"
+mode: rule
+log-level: info
+ipv6: false
+profile:
+  store-selected: true
+  store-fake-ip: true
+unified-delay: true
+tcp-concurrent: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  use-hosts: true
+  default-nameserver:
+    - 119.29.29.29
+  nameserver:
+    - https://doh.pub/dns-query
+  fake-ip-filter:
+    - '*.lan'
+    - 'localhost.ptlogin2.qq.com'
+    - "dns.msftncsi.com"
+    - "*.srv.nintendo.net"
+    - "*.stun.playstation.net"
+    - "xbox.*.microsoft.com"
+    - "*.xboxlive.com"
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+      - 240.0.0.0/4
+proxies:
+  - name: Traffic Reset：19 Days Left
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15019
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: Expire Date：2025/01/05
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15019
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 64.43 GB | 200 GB
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15019
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15019
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 02
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15026
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 03
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 04
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 05
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 06
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15029
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 07
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15013
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 08
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15033
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 09
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15023
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇭🇰 Hong Kong 10
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 15016
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇸🇬 Singapore 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 18806
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇸🇬 Singapore 02
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 18813
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇸🇬 Singapore 03
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 18816
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇸🇬 Singapore 04
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 18803
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇸🇬 Singapore 05
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 18809
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇯🇵 Japan 01
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 17013
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇯🇵 Japan 02
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 17003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇯🇵 Japan 03
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 17006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇯🇵 Japan 04
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 17016
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇯🇵 Japan 05
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 17009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇺🇸 United States 01
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 16006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇺🇸 United States 02
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 16016
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇺🇸 United States 03
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 16013
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇺🇸 United States 04
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 16003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇺🇸 United States 05
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 16009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇼 Taiwan 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 19013
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇼 Taiwan 02
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 19016
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇼 Taiwan 03
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 19003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇼 Taiwan 04
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 19006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇼 Taiwan 05
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 19009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇩🇪 Germany 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 21006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇩🇪 Germany 02
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 21003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇩🇪 Germany 03
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 21009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇬🇧 United Kingdom 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 22006
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇬🇧 United Kingdom 02
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 22009
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇬🇧 United Kingdom 03
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 22003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇰🇷 South Korea 01
+    type: ss
+    server: t73ejffne.nmmis.com
+    port: 24003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇫🇷 France 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 25003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇳🇱 Netherlands 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 26003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇮🇳 India 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 27003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+  - name: 🇹🇷 Türkiye 01
+    type: ss
+    server: eshepm8j9.nmmis.com
+    port: 28003
+    cipher: aes-128-gcm
+    password: e02a415df160c161cd9810f79e60afef
+    udp: true
+proxy-groups:
+  - name: "Kuromis"
+    type: select
+    proxies:
+      - Auto
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇹🇼 Taiwan 01
+      - 🇹🇼 Taiwan 02
+      - 🇹🇼 Taiwan 03
+      - 🇹🇼 Taiwan 04
+      - 🇹🇼 Taiwan 05
+      - 🇩🇪 Germany 01
+      - 🇩🇪 Germany 02
+      - 🇩🇪 Germany 03
+      - 🇬🇧 United Kingdom 01
+      - 🇬🇧 United Kingdom 02
+      - 🇬🇧 United Kingdom 03
+      - 🇰🇷 South Korea 01
+      - 🇫🇷 France 01
+      - 🇳🇱 Netherlands 01
+      - 🇮🇳 India 01
+      - 🇹🇷 Türkiye 01
+  - name: Auto
+    type: fallback
+    proxies:
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+      - 🇹🇼 Taiwan 01
+      - 🇹🇼 Taiwan 02
+      - 🇹🇼 Taiwan 03
+      - 🇹🇼 Taiwan 04
+      - 🇹🇼 Taiwan 05
+      - 🇩🇪 Germany 01
+      - 🇩🇪 Germany 02
+      - 🇩🇪 Germany 03
+      - 🇬🇧 United Kingdom 01
+      - 🇬🇧 United Kingdom 02
+      - 🇬🇧 United Kingdom 03
+      - 🇰🇷 South Korea 01
+      - 🇫🇷 France 01
+      - 🇳🇱 Netherlands 01
+      - 🇮🇳 India 01
+      - 🇹🇷 Türkiye 01
+    url: 'https://www.gstatic.com/generate_204'
+    interval: 300
+  - name: NintendoSwitch
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye   
+  - name: SonyPS5
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye   
+  - name: myPC
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye   
+  - name: Apple
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: BiliBili
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Netflix
+    type: select
+    proxies:
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Disney
+    type: select
+    proxies:
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: TikTok
+    type: select
+    proxies:
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: GlobalMedia
+    type: select
+    proxies:
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: OpenAI
+    type: select
+    proxies:
+      - Kuromis
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Google
+    type: select
+    proxies:
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Microsoft
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Steam
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: PayPal
+    type: select
+    proxies:
+      - DIRECT
+      - Kuromis
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: Telegram
+    type: select
+    proxies:
+      - 🇭🇰 Hong Kong
+      - 🇸🇬 Singapore
+      - 🇯🇵 Japan
+      - 🇺🇸 United States
+      - 🇹🇼 Taiwan
+      - 🇩🇪 Germany
+      - 🇬🇧 United Kingdom
+      - 🇰🇷 South Korea
+      - 🇫🇷 France
+      - 🇳🇱 Netherlands
+      - 🇮🇳 India
+      - 🇹🇷 Türkiye
+  - name: 🇭🇰 Hong Kong
+    type: select
+    proxies:
+      - 🇭🇰 Hong Kong 01
+      - 🇭🇰 Hong Kong 02
+      - 🇭🇰 Hong Kong 03
+      - 🇭🇰 Hong Kong 04
+      - 🇭🇰 Hong Kong 05
+      - 🇭🇰 Hong Kong 06
+      - 🇭🇰 Hong Kong 07
+      - 🇭🇰 Hong Kong 08
+      - 🇭🇰 Hong Kong 09
+      - 🇭🇰 Hong Kong 10
+  - name: 🇸🇬 Singapore
+    type: select
+    proxies:
+      - 🇸🇬 Singapore 01
+      - 🇸🇬 Singapore 02
+      - 🇸🇬 Singapore 03
+      - 🇸🇬 Singapore 04
+      - 🇸🇬 Singapore 05
+  - name: 🇯🇵 Japan
+    type: select
+    proxies:
+      - 🇯🇵 Japan 01
+      - 🇯🇵 Japan 02
+      - 🇯🇵 Japan 03
+      - 🇯🇵 Japan 04
+      - 🇯🇵 Japan 05
+  - name: 🇺🇸 United States
+    type: select
+    proxies:
+      - 🇺🇸 United States 01
+      - 🇺🇸 United States 02
+      - 🇺🇸 United States 03
+      - 🇺🇸 United States 04
+      - 🇺🇸 United States 05
+  - name: 🇨🇳 Taiwan
+    type: select
+    proxies:
+      - 🇹🇼 Taiwan 01
+      - 🇹🇼 Taiwan 02
+      - 🇹🇼 Taiwan 03
+      - 🇹🇼 Taiwan 04
+      - 🇹🇼 Taiwan 05
+  - name: 🇩🇪 Germany
+    type: select
+    proxies:
+      - 🇩🇪 Germany 01
+      - 🇩🇪 Germany 02
+      - 🇩🇪 Germany 03
+  - name: 🇬🇧 United Kingdom
+    type: select
+    proxies:
+      - 🇬🇧 United Kingdom 01
+      - 🇬🇧 United Kingdom 02
+      - 🇬🇧 United Kingdom 03
+  - name: 🇰🇷 South Korea
+    type: select
+    proxies:
+      - 🇰🇷 South Korea 01
+  - name: 🇫🇷 France
+    type: select
+    proxies:
+      - 🇫🇷 France 01
+  - name: 🇳🇱 Netherlands
+    type: select
+    proxies:
+      - 🇳🇱 Netherlands 01
+  - name: 🇮🇳 India
+    type: select
+    proxies:
+      - 🇮🇳 India 01
+  - name: 🇹🇷 Türkiye
+    type: select
+    proxies:
+      - 🇹🇷 Türkiye 01
+rule-providers:
+  Apple:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Apple/Apple_Classical_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Apple_No_Resolve.yaml
+  BiliBili:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/BiliBili/BiliBili_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/BiliBili_No_Resolve.yaml
+  Netflix:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Netflix/Netflix_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Netflix_No_Resolve.yaml
+  Disney:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Disney/Disney_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Disney_No_Resolve.yaml
+  TikTok:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/TikTok/TikTok_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/TikTok_No_Resolve.yaml
+  GlobalMedia:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/GlobalMedia/GlobalMedia_Classical_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/GlobalMedia_Classical_No_Resolve.yaml
+  OpenAI:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/OpenAI/OpenAI_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/OpenAI_No_Resolve.yaml
+  Google:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Google_No_Resolve.yaml
+  Microsoft:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Microsoft_No_Resolve.yaml
+  PayPal:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/PayPal/PayPal_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/PayPal_No_Resolve.yaml
+  Telegram:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Telegram_No_Resolve.yaml
+  Steam:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Steam_No_Resolve.yaml
+  Lan:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/Lan/Lan_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/Lan_No_Resolve.yaml
+  ChinaMax:
+    type: http
+    behavior: classical
+    url: "https://raw.gitmirror.com/blackmatrix7/ios_rule_script/master/rule/Clash/ChinaMax/ChinaMax_Classical_No_IPv6_No_Resolve.yaml"
+    interval: 86400
+    path: ./ruleset/ChinaMax_Classical_No_IPv6_No_Resolve.yaml
+rules:
+  - SRC-IP-CIDR,192.168.11.167/32,NintendoSwitch
+  - SRC-IP-CIDR,192.168.11.192/32,myPC
+  - SRC-IP-CIDR,192.168.11.225/32,SonyPS5 
+  - RULE-SET,Apple,Apple
+  - RULE-SET,BiliBili,BiliBili
+  - RULE-SET,Netflix,Netflix
+  - RULE-SET,Disney,Disney
+  - RULE-SET,TikTok,TikTok
+  - RULE-SET,GlobalMedia,GlobalMedia
+  - RULE-SET,OpenAI,OpenAI
+  - RULE-SET,Steam,Steam
+  - RULE-SET,Google,Google
+  - RULE-SET,PayPal,PayPal
+  - RULE-SET,Telegram,Telegram
+  - RULE-SET,Microsoft,Microsoft
+  - RULE-SET,Lan,DIRECT
+  - RULE-SET,ChinaMax,DIRECT
+  - MATCH,Kuromis
